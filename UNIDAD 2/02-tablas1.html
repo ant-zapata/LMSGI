@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Tabla en HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #6d6565;
+        }
+
+        .pie {
+            text-align: center;
+            background-color: #1bd131;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Sample Table</h2>
+    <table>
+        <caption>Tabla de empleados</caption>
+        <tfoot>
+            <tr>
+                <td class="pie " colspan="4">Datos de empleados</td>
+
+
+
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">Num registro</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</td>
+                <td>John Doe</td>
+                <td>30</td>
+                <td rowspan="3">New York</td>
+            </tr>
+            <tr>
+                <th scope="row">2</td>
+                <td>Jane Smith</td>
+                <td>25</td>
+
+            </tr>
+            <tr>
+                <th scope="row">3</td>
+                <td>Mike Johnson</td>
+                <td>35</td>
+
+
+            </tr>
+            <tr>
+                <th>4</td>
+                <td>Perico de los Palotes</td>
+                <td>45</td>
+                <td>Almería</td>
+
+            </tr>
+        </tbody>
+        
+    </table>
+
+    
+
+</body>
+
+</html>
