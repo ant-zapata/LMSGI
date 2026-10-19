@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejemplo de campos de formulario</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="dam" />
+    <meta name="description" content="Ejemplo de formulario HTML5" />
+</head>
+
+<body>
+    <h1>FORMULARIOS</h1>
+    <h2>Elementos de formulario</h2>
+    <form action="" method="post" enctype="multipart/form-data" name="formulario">
+        <fieldset>
+            <legend>Campos de texto:</legend>
+            <!-- Campo de texto normal -->
+            <label for="texto">Texto normal:</label>
+            <input type="text" id="texto" name="texto" value="" size="30" placeholder="Sugerencia de texto"
+                maxlength="30" minlength="5" required autocomplete="off" /><br />
+            <label for="telefono"> Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="+XX XXX XXXXXX" />
+            <!-- Campo de entrada de email -->
+            <label for="correo">Email:</label>
+            <input type="email" name="correo" id="correo" placeholder="nombre@dominio.com" />
+            <!-- Campo de entrada de url -->
+            <label for="web">Página web:</label>
+            <input type="url" name="web" id="web" placeholder="https://pagina.com/" />
+            <!-- Compo de búsqueda -->
+            <label for="buscar">Búsqueda:</label>
+            <input type="search" name="buscar" id="buscar" placeholder="Texto a buscar" /> <br />
+            <!-- Contraseñas -->
+            <label for="pass">Contraseñas:</label>
+            <input type="password" name="pass" id="pass" minlength="5" maxlength="15"
+                placeholder="Escribe tu contraseña" /> <br />
+            <!-- Texto extenso -->
+            <label for="area">Texto extenso:</label><br />
+            <textarea name="texto_largo" cols="80" rows="10" placeholder="Escribe el texto aquí..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Campos numéricos:</legend>
+            <!-- Número -->
+            <label for="numero">Número o cantidad numérica:</label>
+            <input type="number" name="numero" id="numero" min="10" max="1000" step="10"><br />
+            <!-- Rango -->
+            <label for="rango">Rango numérico:</label>
+            <input type="range" name="rango" id="rango" min="-50" max="50" step="5" value="0">
+        </fieldset>
+        <fieldset>
+            <legend>Campos de fecha y hora: (Ojo no todos los navegadores los implementan)</legend>
+            <!-- Fecha -->
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha" min="1970-01-01" max="2020-12-31"><br />
+            <!-- Hora -->
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora" min="14:00" max="21:00">
+        </fieldset>
+        <fieldset>
+            <legend>Casillas y botones</legend>
+            <!-- Casillas de verificación -->
+            <label for="casilla1">Casilla 1:</label>
+            <input type="checkbox" name="casilla1" id="casilla1" value="casilla1" />
+            <label for="casilla2">Casilla 2:</label>
+            <input type="checkbox" name="casilla2" id="casilla2" value="casilla2" checked /><br />
+            <!-- Botones de radio -->
+            <!--Ojo: Los botones de radio deben tener el mismo nombre para que solo se pueda seleccionar uno-->
+            <label>Botones de radio:</label>
+            <input type="radio" name="radios" id="radio1" value="valor1" checked>Radio 1
+            <input type="radio" name="radios" id="radio2" value="valor2">Radio 2
+        </fieldset>
+        <fieldset>
+            <legend>Listas de selección:</legend>
+            <label for="combo">Listas desplegables:</label>
+            <select name="combo" id="combo">
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+            </select>
+            <br />
+            <label for="multiple">Listas de selección múltiple simple:</label> <br />
+            <select name="multipe" multiple>
+                <option value="1" label="Opcion 1"> </option>
+                <option value="2" label="Opcion 2"> </option>
+                <option value="3" label="Opcion 3"> </option>
+                <option value="4" label="Opcion 4"> </option>
+            </select>
+            <br />
+            <label for="multiple2">Listas de selección múltiple con agrupación:</label> <br />
+            <select name="multipe2" multiple>
+                <!-- Formato alternativo con atributo label -->
+                <optgroup label="Opciones básicas">
+                    <option value="1" label="Opcion 1"> </option>
+                    <option value="2" label="Opcion 2"> </option>
+                </optgroup>
+
+                <optgroup label="Opciones avanzadas">
+                    <option value="3" label="Opcion 3"> </option>
+                    <option value="4" label="Opcion 4"> </option>
+                </optgroup>
+            </select>
+            <br />
+            <label for="selec">Listas de selección abiertas:</label>
+            <input type="text" name="selec" id="selec" list="items" />
+            <!-- Lista de opciones -->
+            <datalist id="items">
+                <option value="valor1">Opción 1</option>
+                <option value="valor2">Opción 2</option>
+                <option value="valor3">Opción 3</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Otros controles:</legend>
+            <label>Selector de color:</label>
+            <input type="color" name="color" value="#1BF44A" /><br />
+            <label>Selector de archivos:</label>
+            <!-- Hay que indicar en el form enctype="multipart/form-data" para enviar archivos-->
+            <input type="file" name="archivo" accept=".pdf,.jpg,.png" multiple />
+        </fieldset>
+        <fieldset>
+            <legend>Orden de los campos</legend>
+            <!-- Al pulsar la tecla TAB -->
+            <input type="text" name="texto1" placeholder="Texto 1" tabindex="5">
+            <input type="text" name="texto2" placeholder="Texto 2" tabindex="8">
+            <input type="text" name="texto3" placeholder="Texto 3" tabindex="7">
+            <input type="text" name="texto4" placeholder="Texto 4" tabindex="6">
+        </fieldset>
+        <fieldset>
+            <legend>Atributos generales:</legend>
+            <label>
+                Campo de solo lectura:
+                <input type="text" name="solo_lectura" readonly value="No se puede editar"/>
+            </label><br/>
+            <label>
+                Campo deshabilitado
+                <input type="text" name="disable" disabled value="No se puede entrar en él"/>
+            </label><br/>
+            <label>
+                Campo oculto (para guardar en él algún valor)
+                <input type="text" name="disable" hidden value="No se puede ver"/>
+            </label><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Botones de formulario:</legend>
+            Botón submit que envía el formulario al servidor:<br/>
+            <input type="submit" value="Enviar formulario"> <br/>
+            Botón con imagen que envía el formulario:<br>
+            <input type="image" src="enviar-mensaje.png" alt="Enviar" width="20"/> <br/>
+            Botón que borra todo el formulario<br/>
+            <input type="reset" value="Limpiar formulario" />  <br/>
+            Botón personalizado al que damos funcionalidad con JavaScript:<br/>
+            <button onClick="alert('¡Hola a todos!')">Saludar</button>
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
