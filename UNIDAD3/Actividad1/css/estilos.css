@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px red;*/
+}
+
+body{
+    background-color: #dcc7b9;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: dotted 5px white;
+    background-color: #654029;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    border: solid 1px #b47148;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    
+}
+
+article p{
+    margin: 0 0 0 20px; /* es indiferente usar los dos*/
+    margin-right: 20px;
+}
