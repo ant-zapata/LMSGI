@@ -1,0 +1,86 @@
+* {
+    border: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../fredoka-one.woff') format('truetype');
+}
+
+body {
+    
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgb(55, 178, 165, 1); /* El cuarto valor es la opacidad */
+    background-image: url("../img/cuadros.png"), url("../img/cuadros.png");
+    background-repeat: repeat-y, repeat-y;
+    background-position: 0% 50%, right;
+}
+
+h1, h2, h3 {
+    
+    color: rgb(1, 94, 84, 1);
+    font-family: 'Fredoka', sans-serif;
+    
+}
+
+h1{
+    font-size: 2.5rem;
+    text-shadow: 1px -1px  rgba(255, 255, 255);
+    text-align: center;
+}
+
+.tablero{
+    float: right;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 0 10px 10px;
+}
+
+section{
+    border-top: 5px solid rgb(1, 94, 84, 1);
+    clear: both;
+}
+
+section p{
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.3rem;
+    padding: 5px;
+    overflow: auto;
+}
+
+article{
+    border: 5px solid white;
+    width: 200px;
+    height:350px;
+    margin: 20px;
+    float: left;
+    border-radius: 0 40px 40px 0;
+    overflow: hidden;
+    box-shadow: 9px 8px 15px #fdce9d;    
+}
+
+article h3{
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 15px;
+}
+
+.grafica{
+    border: 5px double white;
+    text-align: center;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    border-top: 5px solid black;
+    margin-top: 20px;
+}
+    
+

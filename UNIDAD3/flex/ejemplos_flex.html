@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos flex</title>
+    <style>
+        .contenedor {
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .card {
+            min-width: 50px;
+            padding: 1rem;
+            border: 1px solid #bbb;
+            border-radius: 10px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .logo {
+            width: 60%;
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            
+            
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 40%;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="contenedor">
+        <div class="logo">Mi Página web</div>
+        <nav>
+            <div class="card">Inicio</div>
+            <div class="card">Rutas</div>
+            <div class="card">El Club</div>
+            <div class="card">Contacto</div>
+            <div class="card">Únete</div>
+
+        </nav>
+    </header>
+</body>
+
+</html>

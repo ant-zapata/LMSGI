@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            display: inline-flex;
+            
+        }
+        .card, .card2 {
+            position: relative;
+            width: 220px;
+            padding: 1.2rem;
+            border: 1px solid #bbb;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .card2 {
+            top: 10px;
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #e5484d;
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 99px;
+        }
+        .badge2 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: #e5484d;
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 99px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="card"><span class="badge">Nuevo</span>Curso de CSS</div>
+        <div class="card2">Curso de HTML</div>
+        
+    </div>
+    <div class="relleno" style="height: 1000px;border: 1px solid #ccc;"></div>
+    <div class="badge2 fijo">Botón fijo</div>
+</body>
+
+</html>
